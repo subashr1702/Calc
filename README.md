@@ -82,8 +82,9 @@ Publish the website in the given URL.
 
 ```
 ## OUTPUT:
-![Screenshot 2024-04-24 093058](https://github.com/subashr1702/Calc/assets/168012691/028764bf-bb19-43ae-84d4-411bd93ad532)
-![Screenshot 2024-04-24 093114](https://github.com/subashr1702/Calc/assets/168012691/f3b7c03d-de11-457a-aa45-c4d0ecfcaea4)
+![Screenshot 2024-04-29 135734](https://github.com/subashr1702/Calc/assets/147139828/f88e6933-bd00-4732-bfd9-da0be3078625)
+![Screenshot 2024-04-29 135734](https://github.com/subashr1702/Calc/assets/147139828/4b5005fd-4970-41d5-99a7-af4eb469bf84)
+
 
 ## RESULT:
 The program for designing a standard calculator using HTML and CSS is executed successfully.
