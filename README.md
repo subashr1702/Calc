@@ -1,5 +1,5 @@
 # Ex.08 Design of a Standard Calculator
-## Date:24-04-2024
+## Date:30.04.2024
 
 ## AIM:
 To design a web application for a standard calculator with minimum five operations.
@@ -26,64 +26,157 @@ Publish the website in the given URL.
 
 ## PROGRAM :
 ```
+calc.html
+
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-    <title>CALCULATOR</title>
-    <script>
-    function fn(e){
-        if (e.innerHTML == '=') {
-            output. value = eval (output.value);
-        }
-        else if (e.id == 'back') {
-            v = output. value;
-            output. value = v.substring(0, v.length - 1);
-        }
-        else if (e. innerHTML == 'C') {
-            output. value = '';
-        }
-        else {
-            output.value += e.innerHTML;
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="text/javascript">
+    function dis(x){
+        document.getElementById("inbox").value+=x;
+    }
+    function clr(){
+        document.getElementById("inbox").value='';
+    }
+    function del(){
+        var num=document.getElementById("inbox").value;
+        var ans=num.substring(0,num.length-1);
+        document.getElementById("inbox").value=ans;
+    }
+    function fun(){
+        var res=document.getElementById("inbox").value;
+        if(res){
+        var ans=eval(res);
+        document.getElementById("inbox").value=ans;
         }
     }
     </script>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    </head>
-    <body>
-        <div class="bg-primary mx-auto text-center " style="width: 24rem;">Name:SUBASH RReg.no: 212223230218</div>
-        <div class="bg-primary row mx-auto text-center" style="width: 24rem;" >
-            <div class="col-12 my-4"><input type="text" name="" id="output" style="width: 100%;height: 50px;border-radius: 25px;"></div> 
-            <div class="m-3 col-2 btn btn-dark squared-4" onclick="fn(this)" >(</div> 
-            <div class="m-3 col-2 btn btn-dark squared-4" onclick="fn(this)">)</div> 
-            <div class="m-3 col-2 btn btn-danger squared-4" onclick="fn(this)">C</div> 
-            <div class="m-3 col-2 btn btn-danger squared-4" onclick="fn(this)" id="back"><i class="bi bi-backspace"></i>
-            </div>
-            <div class="m-3 col-2 btn btn-success squared-4" onclick="fn(this)">7</div>
-            <div class="m-3 col-2 btn btn-success squared-4" onclick="fn(this)">8</div>
-            <div class="m-3 col-2 btn btn-success squared-4" onclick="fn(this)">9</div> 
-            <div class="m-3 col-2 btn btn-dark squared-4" onclick="fn(this)">*</div>
-            <div class="m-3 col-2 btn btn-success squared-4" onclick="fn(this)">4</div>
-            <div class="m-3 col-2 btn btn-success squared-4" onclick="fn(this)">5</div>
-            <div class="m-3 col-2 btn btn-success squared-4" onclick="fn(this)">6</div>
-            <div class="m-3 col-2 btn btn-dark squared-4" onclick="fn(this)">-</div>
-            <div class="m-3 col-2 btn btn-success squared-4" onclick="fn(this)">1</div> 
-            <div class="m-3 col-2 btn btn-success squared-4" onclick="fn(this)">2</div>
-            <div class="m-3 col-2 btn btn-success squared-4" onclick="fn(this)">3</div>
-            <div class="m-3 col-2 btn btn-dark squared-4" onclick="fn(this)">+</div>
-            <div class="m-3 col-2 btn btn-success squared-4" onclick="fn(this)">0</div>
-            <div class="m-3 col-2 btn btn-success squared-4" btn-success onclick="fn(this)">.</div>
-            <div class="m-3 col-2 btn btn-dark squared-4" onclick="fn(this)">%</div>
-            <div class="m-3 col-2 btn btn-dark squared-4" onclick="fn(this)">/</div> 
-            <div class="m-3 col-11 btn btn-warning squared-4" onclick="fn(this)">=</div>
-        </div>
-    </body>
-</html>
 
+</head>
+<style>
+body{
+background-color:black;
+}
+.container{
+ position:relative;
+margin-top:30px;
+margin-left:45px;
+width:270px;
+height:380px;
+
+}
+button{
+width:60px;
+height:50px;
+padding:20px 40px 20px 20px;
+border-right: none;
+font-size:20px;
+text-align: center;
+}
+input{
+
+width:253px;
+height:100px;
+font-size:30px;}
+#b10{
+padding-right:107px;
+}
+.box{
+    position:absolute;
+    top:27%;
+margin-left:35%;
+   height:430px;
+   width:340px;
+    background-color:darkgrey;
+    margin-right: 100px;
+    
+top: 30%;
+left: 60px;
+border-radius: 10px;
+overflow: hidden;
+padding-right: 5px;
+}
+h2{
+    text-align: center;
+    color: aqua;
+    font-family:serif;
+    margin-top: 90px;
+    margin-left:0.5%;
+    font-size: x-large;
+}
+.red{
+    background-color: red;
+    color: green;
+}
+.red1{
+    color: green;
+
+}
+.red3{
+    color: green;
+}
+.red4{
+    color: green;
+}
+.red5{
+    color: green;
+}
+.yellow{
+    color: green;
+}
+.yellow2{
+    color: green;
+    
+}
+.red6{
+    color: green;
+}
+.blue{
+    color: blue;
+    background-color: lightskyblue;
+}
+</style>
+</head>
+<body>
+<div class="box">
+<div class="container">
+<input type="text"  class="blue" id="inbox"name="input"><br>
+<button onclick="clr()"> AC</button>
+<button class="red"  onclick="del()">DE</button>
+<button class="red4" onclick="dis('%')">%</button>
+<button class="red5" onclick="dis('/')">/</button><br>
+<button name="1" onclick="dis('1')">1</button>
+<button onclick="dis('2')">2</button>
+<button onclick="dis('3')">3</button>
+<button class="red3" onclick="dis('+')">+</button ><br>
+<button onclick="dis('4')">4</button>
+<button  onclick="dis('5')">5</button>
+<button onclick="dis('6')">6</button>
+<button class="red2"  onclick="dis('-')">-</button><br>
+<button onclick="dis('7')">7</button>
+<button onclick="dis('8')">8</button>
+<button onclick="dis('9')">9</button>
+<button class="yellow" onclick="dis('*')" >x</button><br>
+<button class="yellow1" onclick="dis('.')">.</button>
+<button onclick="dis('0')">0</button>
+<button id="b10" class="red6" onclick="fun()">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;=</button><br>
+</div>
+</div>
+<h2>
+    Subash calculator<br><br>
+    Register Number:212223230218
+</h2>
+</body>
+</html>
 ```
 ## OUTPUT:
-![Screenshot 2024-04-29 135734](https://github.com/subashr1702/Calc/assets/168012691/d14276d3-afa0-4288-99c9-0e23ba329ac4)
-![Screenshot 2024-04-29 135747](https://github.com/subashr1702/Calc/assets/168012691/1391af0c-b48d-4365-8654-643235018146)
+
+![Screenshot 2024-04-30 114503](https://github.com/subashr1702/Calc/assets/168012691/9a9b4c52-03bd-48b9-9cfa-c076d4ef80d7)
+
+![Screenshot 2024-04-30 114503](https://github.com/subashr1702/Calc/assets/168012691/b8ea2565-bca0-482f-8684-d0a66143750f)
 
 
 ## RESULT:
