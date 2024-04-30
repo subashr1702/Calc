@@ -176,8 +176,8 @@ h2{
 
 ![Screenshot 2024-04-30 114503](https://github.com/subashr1702/Calc/assets/168012691/9a9b4c52-03bd-48b9-9cfa-c076d4ef80d7)
 
-![Screenshot 2024-04-30 114503](https://github.com/subashr1702/Calc/assets/168012691/b8ea2565-bca0-482f-8684-d0a66143750f)
 
+![Screenshot 2024-04-30 114512](https://github.com/subashr1702/Calc/assets/168012691/84fd0fec-2ac3-47a4-ae05-0ded42f3c338)
 
 ## RESULT:
 The program for designing a standard calculator using HTML and CSS is executed successfully.
